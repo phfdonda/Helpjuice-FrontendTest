@@ -70,9 +70,17 @@ nav {
  top: -30px;
 }
 
-/* .learn-more-and-about li {
- font-size: 18px;
-} */
+.free-unlimited-powerful {
+ background: linear-gradient(
+  90deg,
+  #f0fbb9 0%,
+  #fbb3a0 29.01%,
+  #bfa2fd 53.16%,
+  #a4d0fc 74.87%,
+  #9fe9e2 87.59%,
+  #9fface 100%
+ );
+}
 
 .shadow-container {
  position: relative;
