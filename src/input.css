@@ -24,6 +24,11 @@
   font-weight: 700;
   src: url(./fonts/mulish/static/Mulish-Bold.ttf) format("ttf");
  }
+ @font-face {
+  font-family: Mulish-Regular;
+  font-weight: 500;
+  src: url(./fonts/mulish/static/Mulish-Regular.ttf) format("ttf");
+ }
 }
 
 html {
@@ -63,4 +68,10 @@ nav {
  position: relative;
  width: 70%;
  top: -30px;
+}
+
+.black-banner {
+ background-image: url(./public/Shadow.png);
+ background-repeat: no-repeat;
+ background-position: 100% 100%;
 }

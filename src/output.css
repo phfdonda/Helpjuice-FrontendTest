@@ -477,6 +477,14 @@ video {
   src: url(./fonts/mulish/static/Mulish-Bold.ttf) format("ttf");
 }
 
+@font-face {
+  font-family: Mulish-Regular;
+
+  font-weight: 500;
+
+  src: url(./fonts/mulish/static/Mulish-Regular.ttf) format("ttf");
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -579,6 +587,11 @@ video {
 
 .absolute {
   position: absolute;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-4 {
@@ -736,12 +749,26 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
 .border-4 {
   border-width: 4px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-slate-900 {
@@ -766,6 +793,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-4 {
@@ -808,12 +839,24 @@ video {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .font-fun {
   font-family: Alphabetized Cassette Tapes Thin, cursive;
 }
 
 .font-inter {
   font-family: Inter Medium, sans-serif;
+}
+
+.font-mulish_bold {
+  font-family: Mulish Bold, sans-serif;
+}
+
+.font-mulish_regular {
+  font-family: Mulish Regular, sans-serif;
 }
 
 .font-sans {
@@ -826,10 +869,6 @@ video {
 
 .font-title {
   font-family: Plus Jakarta Sans, sans-serif;
-}
-
-.font-mulish {
-  font-family: Mulish Bold, sans-serif;
 }
 
 .text-2xl {
@@ -891,6 +930,10 @@ video {
   line-height: 2.5rem;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .leading-7 {
   line-height: 1.75rem;
 }
@@ -913,6 +956,10 @@ video {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
+}
+
+.opacity-60 {
+  opacity: 0.6;
 }
 
 html {
@@ -952,4 +999,10 @@ nav {
   position: relative;
   width: 70%;
   top: -30px;
+}
+
+.black-banner {
+  background-image: url(./public/Shadow.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
