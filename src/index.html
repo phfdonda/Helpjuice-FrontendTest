@@ -211,7 +211,7 @@
        class="flex items-center justify-between text-base font-medium p-2 h-14"
       >
        <p class="font-semibold">Is my data secure?</p>
-       <img src="./public/chevron-down.png" alt="Chevron" />
+       <img class="rotate-180" src="./public/chevron-down.png" alt="Chevron" />
       </li>
      </a>
      <p class="font-subtle text-left text-sm font-normal pl-2"></p>
@@ -248,45 +248,59 @@
    </div>
   </main>
 
-  <footer>
-   <div>
-    <img src="./public/footer_logo.png" alt="Logo" />
-    <h3>Turn complex process into a simple step-by step Guide</h3>
-    <img src="./public/by_helpjuice.png" alt="Built by Helpjuice" />
-   </div>
-   <div>
-    <h2>Learn More</h2>
-    <menu>
-     <li>Wizardshot</li>
-     <li>Community Page</li>
-     <li>Help Center</li>
-     <li>Security Information</li>
-    </menu>
-    <h2>Company</h2>
-    <menu>
-     <li>About Us</li>
-     <li>Status Page</li>
-    </menu>
-   </div>
-   <div>
+  <footer class="flex flex-col px-6 my-12 gap-y-12">
+   <div class="flex flex-col gap-y-6">
     <div>
+    <img class="h-8 w-auto" src="./public/footer_logo.png" alt="Logo" />
+
+    </div>
+    <h3 class="font-mulish_regular text-lg font-semibold w-8/12">Turn complex process into a simple step-by step Guide</h3>
+    <div><img src="./public/by_helpjuice.png" alt="Built by Helpjuice" /></div>
+   </div>
+
+
+   <div class="learn-more-and-about flex gap-x-12">
+    <div>
+        <h2 class="font-mulish_bold font-bold text-2xl mb-4">Learn More</h2>
+        <menu>
+           <a href="/"><li class="font-mulish_regular font-regular text-xl mb-4">Wizardshot</li></a>
+           <a href="/"><li class="font-mulish_regular font-regular text-xl mb-4">Community Page</li></a>
+           <a href="/"><li class="font-mulish_regular font-regular text-xl mb-4">Help Center</li></a>
+           <a href="/"><li class="font-mulish_regular font-regular text-xl mb-4">Security Information</li></a>
+        </menu>
+    </div>
+    <div>
+        <h2 class="font-mulish_bold font-bold text-2xl mb-4">Company</h2>
+        <menu>
+            <a href="/"><li class="font-mulish_regular font-regular text-xl mb-4">About Us</li></a>
+            <a href="/"><li class="font-mulish_regular font-regular text-xl mb-4">Status Page</li></a>
+        </menu>
+    </div>
+   </div>
+
+   <div>
+    <div class="flex gap-x-4 mb-6">
      <a href="/"><img src="./public/tiktok.png" alt="Link for Tiktok" /></a>
      <a href="/"
       ><img src="./public/instagram.png" alt="Link for Instagram"
      /></a>
     </div>
-    <menu>
-     <a href="/">Log In</a>
-     <a href="/">Sign Up</a>
+
+    <menu class="flex gap-x-4">
+     <a href="/"><p class="font-mulish_bold text-2xl font-semibold">Log In</p></a>
+     <a href="/"><p class="font-mulish_bold text-2xl font-semibold">Sign Up</p></a>
     </menu>
    </div>
-   <div>
-    <div>
-     <h5 class="text-slate-900">📞 +1 (833) 387 3877</h5>
-     <h5>✉️ success@wizardshot.com</h5>
+   
+<hr>
+
+   <div class="flex flex-col gap-y-4 items-center justify-center">
+    <div class="flex flex-col gap-y-2 items-center justify-center  mb-4">
+     <h5 class="text-slate-900 font-mulish_regular text-sm">📞 +1 (833) 387 3877</h5>
+     <h5 class="text-slate-900 font-mulish_regular text-sm">✉️ success@wizardshot.com</h5>
     </div>
 
-    <h4>© 2024 Wizardshot – All rights reserved.</h4>
+    <h4 class="text-slate-300">© 2024 Wizardshot – All rights reserved.</h4>
    </div>
   </footer>
  </body>
