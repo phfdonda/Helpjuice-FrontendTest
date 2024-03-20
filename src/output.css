@@ -958,6 +958,18 @@ video {
   color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
 .opacity-60 {
   opacity: 0.6;
 }
@@ -1001,8 +1013,32 @@ nav {
   top: -30px;
 }
 
-.black-banner {
-  background-image: url(./public/Shadow.png);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
+.shadow-container {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+}
+
+.content {
+  position: relative;
+  color: #cbd5e1;
+}
+
+.gradient-shadow {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  background: linear-gradient(
+  90deg,
+  #44ff9a -0.55%,
+  #44b0ff 22.86%,
+  #8b44ff 48.36%,
+  #ff6644 73.33%,
+  #ebff70 99.34%
+ );
+  border-radius: 0.5rem;
+  opacity: 0.3;
+  filter: blur(20px);
 }
