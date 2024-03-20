@@ -9,6 +9,21 @@
   src: url(./fonts/alphabetized_cassette_tapes/Alphabetized\ Cassette\ Tapes\ Thin.ttf)
    format("ttf");
  }
+ @font-face {
+  font-family: Inter Medium;
+  font-weight: 500;
+  src: url(./fonts/inter/Inter-Medium.ttf) format("ttf");
+ }
+ @font-face {
+  font-family: Inter Regular;
+  font-weight: 400;
+  src: url(./fonts/inter/Inter-Regular.ttf) format("ttf");
+ }
+ @font-face {
+  font-family: Mulish-Bold;
+  font-weight: 700;
+  src: url(./fonts/mulish/static/Mulish-Bold.ttf) format("ttf");
+ }
 }
 
 html {
@@ -28,6 +43,7 @@ nav {
  width: 195px;
  height: 40px;
  padding: 8px 20px 8px 24px;
+ background-color: #03132e;
 }
 
 .bck-decoration {
