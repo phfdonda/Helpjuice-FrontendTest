@@ -13,12 +13,18 @@
   <title>WizardShot</title>
  </head>
 
- <body class="overflow-y-scroll">
+ <body>
   <header>
-   <a href="/"><img src="./public/logo.png" alt="Logo" /></a>
-   <a href="/"><img src="./public/menu.png" alt="Menu" /></a>
-   <div>
-    <menu>
+   <nav class="flex justify-between items-center px-6">
+    <a href="/"><img src="./public/logo.png" alt="Logo" /></a>
+    <a href="/"><img src="./public/menu.png" alt="Menu" /></a>
+    <a class="hidden" href="/"
+     ><img src="./public/x-close.png" alt="Close"
+    /></a>
+   </nav>
+
+   <div class="absolute w-full bg-white h-full hidden">
+    <menu class="leading-10 pl-6">
      <li><a href="/">Home</a></li>
      <li><a href="/">Features</a></li>
      <li><a href="/">About</a></li>
@@ -26,10 +32,21 @@
      <li><a href="/">Login</a></li>
     </menu>
     <hr />
-    <a class="install-btn bg-black text-white rounded-lg" href="http://">
-     <img src="./public/icon _chrome.png" alt="Icon Chrome" />Install Wizardshot
-    </a>
-    <div>100% free, forever 🤑</div>
+    <div class="flex items-center justify-center flex-col">
+     <a
+      class="flex items-center justify-between px-4 mt-7 bg-black text-white rounded-lg font-sm h-10 w-48"
+      href="http://"
+     >
+      <img
+       class="h-3/5"
+       src="./public/icon _chrome.png"
+       alt="Icon Chrome"
+      />Install Wizardshot
+     </a>
+     <div class="font-fun font-normal text-xs leading-7">
+      100% free, forever 🤑
+     </div>
+    </div>
    </div>
   </header>
 
@@ -133,12 +150,14 @@
       <a href="/">Is my data secure?</a>
      </li>
     </ul>
-    <h5>Curious to learn more?</h5>
+    <h5 class="font-sans font-sm">Curious to learn more?</h5>
     <a class="install-btn bg-black text-white rounded-lg" href="http://"
      >Visit Help & Community Center
     </a>
     <div>
-     <div>100% free, forever 🤑</div>
+     <div class="font-fun font-normal text-xs leading-7">
+      100% free, forever 🤑
+     </div>
      <div>
       <h3>Create Tutorials in 3 Clicks.</h3>
       <p>
