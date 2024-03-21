@@ -45,6 +45,11 @@ nav {
  height: 60px;
 }
 
+main {
+ background-image: url(./public/bg-lines.png);
+ background-repeat: no-repeat;
+}
+
 .install-btn {
  width: 195px;
  height: 40px;

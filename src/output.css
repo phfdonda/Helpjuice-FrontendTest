@@ -815,10 +815,6 @@ video {
   height: 100%;
 }
 
-.h-\[35px\] {
-  height: 35px;
-}
-
 .max-h-\[40px\] {
   max-height: 40px;
 }
@@ -883,6 +879,10 @@ video {
   width: 297px;
 }
 
+.w-\[32px\] {
+  width: 32px;
+}
+
 .w-\[356px\] {
   width: 356px;
 }
@@ -917,10 +917,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[32px\] {
-  width: 32px;
 }
 
 .min-w-80 {
@@ -1318,6 +1314,11 @@ nav {
   height: 60px;
 }
 
+main {
+  background-image: url(./public/bg-lines.png);
+  background-repeat: no-repeat;
+}
+
 .install-btn {
   width: 195px;
   height: 40px;
@@ -1408,10 +1409,6 @@ nav {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:inline-block {
-    display: inline-block;
   }
 
   .md\:flex {
