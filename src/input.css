@@ -38,6 +38,7 @@ html {
 body {
  width: 100vw;
  height: auto;
+ overflow-x: hidden;
 }
 
 nav {
@@ -84,8 +85,7 @@ nav {
 
 .shadow-container {
  position: relative;
- width: 60%;
- margin-left: auto;
+ height: 30px;
 }
 
 .content {
@@ -94,11 +94,11 @@ nav {
 }
 
 .gradient-shadow {
+ width: 159px;
+ height: 30px;
  position: absolute;
- top: -0.5rem;
- right: -0.5rem;
- bottom: -0.5rem;
- left: -0.5rem;
+ bottom: 1rem;
+ right: 20px;
  background: linear-gradient(
   90deg,
   #44ff9a -0.55%,

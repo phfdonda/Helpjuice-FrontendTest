@@ -15,14 +15,46 @@
 
  <body>
   <header>
-   <nav class="flex justify-between items-center px-6">
+   <!-- DESKTOP NAVBAR -->
+   <nav class="hidden md:flex justify-between items-center px-6 py-[50px]">
+    <a href="/"
+     ><div class="w-[110px] h-auto">
+      <img src="./public/logo-big.png" alt="Logo" /></div
+    ></a>
+    <menu class="flex items-center gap-x-5 text-base opacity-60">
+     <li><a href="/">Home</a></li>
+     <li><a href="/">Features</a></li>
+     <li><a href="/">About</a></li>
+     <li><a href="/">Help Center & Community</a></li>
+    </menu>
+    <div class="relative flex items-center gap-x-3">
+     <a class="opacity-60" href="/">Login</a>
+
+     <div class="absolute font-fun font-normal text-xs top-[-17px] right-2">
+      100% free, forever 🤑
+     </div>
+     <a
+      class="hidden md:inline-flex flex items-center justify-between px-4 bg-black text-white rounded-lg font-sm h-10 w-[182px]"
+      href="http://"
+     >
+      <img
+       class="h-[19.4px]"
+       src="./public/icon _chrome.png"
+       alt="Icon Chrome"
+      />Install Wizardshot
+     </a>
+    </div>
+   </nav>
+
+   <!-- MOBILE NAVBAR -->
+   <nav class="md:hidden flex justify-between items-center px-6">
     <a href="/"><img src="./public/logo.png" alt="Logo" /></a>
     <a href="/"><img src="./public/menu.png" alt="Menu" /></a>
     <a class="hidden" href="/"
      ><img src="./public/x-close.png" alt="Close"
     /></a>
    </nav>
-
+   <!-- MOBILE MENU -->
    <div class="absolute w-full bg-white h-full hidden">
     <menu class="leading-10 pl-6">
      <li><a href="/">Home</a></li>
@@ -37,6 +69,7 @@
       class="flex items-center justify-between px-4 mt-7 bg-black text-white rounded-lg font-sm h-10 w-48"
       href="http://"
      >
+      <img class="h-3/5" src="./public/icon _chrome.png" alt="Icon Chrome" />
       <img
        class="h-3/5"
        src="./public/icon _chrome.png"
@@ -50,21 +83,32 @@
    </div>
   </header>
 
-  <main class="flex flex-col text-center items-center border-b-4 border-black">
-   <h1 class="text-3xl font-title font-extrabold text-slate-900 w-3/4 my-4">
+  <main class="flex flex-col text-center items-center">
+   <h1
+    class="text-3xl md:text-6xl font-title font-extrabold text-slate-900 w-3/4 my-4"
+   >
     Your Magic Wand for Instant Documentation
    </h1>
-   <h3 class="text-3xl font-sans text-xl font-semibold w-3/4 text-zinc-600">
+   <h3
+    class="text-3xl md:text-base font-sans text-xl font-semibold w-3/4 text-zinc-600"
+   >
     Turn ANY process into a simple step-by step Guide
    </h3>
    <a class="install-btn bg-black text-white rounded-lg my-4" href="http://">
     Install Wizardshot →
    </a>
 
-   <div class="video-box relative w-[360px] h-auto rounded-md px-3 py-2 mt-20">
+   <div
+    class="video-box relative w-[360px] md:w-[70%] h-auto rounded-md px-3 py-2 mt-20"
+   >
     <img
-     class="video w-[356px] h-[204px] object-contain"
+     class="video md:hidden w-[356px] h-auto object-contain"
      src="./public/video.png"
+     alt="video"
+    />
+    <img
+     class="video hidden md:block md:w-full h-auto object-contain"
+     src="./public/video-big.png"
      alt="video"
     />
     <img
@@ -82,17 +126,17 @@
 
    <div class="bck-decoration h-4/5 w-screen max-w-full mb-20"></div>
 
-   <h2 class="text-3xl font-title font-extrabold text-slate-900 w-3/4 mb-6">
-    Say <u>Goodbye To Writing Docs</u>, and Hello To Wizardshot Doing it for
-    YOU.
+   <h2 class="text-3xl font-title font-extrabold text-slate-900 w-3/4">
+    Say <u>Goodbye To Writing Docs</u>, and <br />
+    Hello To Wizardshot Doing it for YOU.
    </h2>
 
-   <div></div>
-
-   <ul class="steps flex flex-col gap-y-10 w-screen mt-12 mb-28">
-    <li class="relative block w-full h-80 my-6">
+   <ul
+    class="steps flex flex-col max-w-[800px] md:flex-row gap-y-10 md:justify-between w-screen mb-28"
+   >
+    <li class="relative block w-full md:w-[25%] h-80 my-6">
      <div class="relative w-full mx-auto h-80">
-      <div class="w-10/12 mx-auto top-[-30px] h-6/12 gradient-shadow"></div>
+      <div class="w-[297px] h-[250px] mx-auto gradient-shadow"></div>
 
       <div
        class="absolute top-0 right-0 left-0 bottom-0 m-auto w-[297px] h-[234px] bg-white"
@@ -104,7 +148,7 @@
        />
       </div>
      </div>
-     <div class="w-80 h-80 text-left ml-10">
+     <div class="w-80 h-auto text-left ml-10 md:ml-0 md:max-w-[280px]">
       <h4 class="font-sans text-lg font-semibold mb-2">1. Click Capture</h4>
       <h5 class="font-sans text-sm font-normal text-slate-500">
        Once you install the Chrome extension, fire it up, and click “Capture”.
@@ -112,9 +156,9 @@
      </div>
     </li>
 
-    <li class="relative w-full h-80 my-6">
+    <li class="relative w-full md:w-[25%] h-80 my-6">
      <div class="relative w-full mx-auto h-80">
-      <div class="w-10/12 mx-auto top-[-30px] h-6/12 gradient-shadow"></div>
+      <div class="w-[297px] h-[250px] mx-auto gradient-shadow"></div>
 
       <div
        class="absolute top-0 right-0 left-0 bottom-0 m-auto w-[297px] h-[234px] bg-white"
@@ -126,7 +170,7 @@
        />
       </div>
      </div>
-     <div class="w-80 h-80 text-left ml-10">
+     <div class="w-80 h-auto text-left ml-10 md:ml-0 md:max-w-[280px]">
       <h4 class="font-sans text-lg font-semibold mb-2">
        2. Perform Your Actions
       </h4>
@@ -137,9 +181,9 @@
      </div>
     </li>
 
-    <li class="relative w-full h-80 my-3">
+    <li class="relative w-full md:w-[25%] h-80 my-6">
      <div class="relative w-full mx-auto h-80">
-      <div class="w-10/12 mx-auto top-[-30px] h-6/12 gradient-shadow"></div>
+      <div class="w-[297px] h-[250px] mx-auto gradient-shadow"></div>
 
       <div
        class="absolute top-0 right-0 left-0 bottom-0 m-auto w-[297px] h-[234px] bg-white"
@@ -147,7 +191,7 @@
        <img class="w-[297px] h-[234px]" src="./public/done.png" alt="capture" />
       </div>
      </div>
-     <div class="w-80 h-80 text-left ml-10">
+     <div class="w-80 h-auto text-left ml-10 md:ml-0 md:max-w-[280px]">
       <h4 class="font-sans text-lg font-semibold mb-2">
        3. Done. Article Written
       </h4>
@@ -168,46 +212,52 @@
    </h2>
 
    <div
-    class="flex free-unlimited-powerful w-11/12 h-4 font-title font-slate-900 mb-10"
+    class="flex free-unlimited-powerful w-11/12 max-w-[678px] h-4 md:h-[25px] font-title font-slate-900 mb-10"
    >
     <h4
-     class="underline underline-offset-4 text-[21px] md:text-[40px] relative -top-[10px]"
+     class="underline underline-offset-4 text-[21px] md:text-[40px] relative -top-[10px] md:-top-[20px] opacity-60"
     >
      Free
     </h4>
-    <div class="text-[8px] md:text-[14px] relative text-left ml-1 mr-2">
+    <div
+     class="text-[8px] md:text-[14px] relative text-left ml-1 mr-2 opacity-60"
+    >
      <p>Free</p>
      <p>Forever</p>
     </div>
     <h4
-     class="underline underline-offset-4 text-[21px] md:text-[40px] relative -top-[10px]"
+     class="underline underline-offset-4 text-[21px] md:text-[40px] relative -top-[10px] md:-top-[20px] opacity-60"
     >
      Unlimited
     </h4>
-    <div class="text-[8px] md:text-[14px] relative text-left ml-1 mr-2">
+    <div
+     class="text-[8px] md:text-[14px] relative text-left ml-1 mr-2 opacity-60"
+    >
      <p>Tutorial</p>
      <p>Creation</p>
     </div>
     <h4
-     class="underline underline-offset-4 text-[21px] md:text-[40px] relative -top-[10px]"
+     class="underline underline-offset-4 text-[21px] md:text-[40px] relative -top-[10px] md:-top-[20px] opacity-60"
     >
      Powerful
     </h4>
-    <div class="text-[8px] md:text-[14px] relative text-left ml-1 mr-2">
+    <div
+     class="text-[8px] md:text-[14px] relative text-left ml-1 mr-2 opacity-60"
+    >
      <p>Editor &</p>
      <p>Integrations</p>
     </div>
    </div>
 
    <div
-    class="relative flex flex-col items-center rounded-lg border-solid border-slate-900 border-4 margin-2 w-11/12 h-4/6"
+    class="relative flex flex-col items-center rounded-lg border-solid border-slate-900 border-4 margin-2 w-11/12 max-w-[867px] h-4/6"
    >
     <img
-     class="absolute w-[27px] top-[-120px] right-3"
+     class="absolute w-[27px] md:w-[35px] top-[-120px] right-3"
      src="./public/btn.png"
      alt="face-button"
     />
-    <div class="absolute w-[25px] -top-8 right-2">
+    <div class="absolute w-[25px] md:w-[35px] md:h-[151px] -top-8 right-2">
      <img src="./public/arrow.png" alt="arrow" />
     </div>
     <h2 class="text-3xl font-title font-bold text-slate-900 w-3/4 py-8">
@@ -218,13 +268,15 @@
      href="http://"
     >
      <img
-      class="h-3/5"
-      src="./public/icon _chrome.png"
+      class="w-[32px]"
+      src="./public/chrome-big.png"
       alt="Icon Chrome"
      />Install Wizardshot
     </a>
-    <div class="flex flex-col items-center mb-11 mt-12 w-80 h-4/6">
-     <p class="text-sm font-title">
+    <div
+     class="flex flex-col items-center mb-11 mt-12 min-w-80 max-w-[625px] h-4/6"
+    >
+     <p class="text-sm md:text-[28px] font-title md:leading-10">
       <span class="font-bold">
        “Has helped us write help docs 100x faster”
       </span>
@@ -235,7 +287,8 @@
     </div>
    </div>
 
-   <div class="w-11/12 mb-8">
+   <!-- Q&A -->
+   <div class="w-11/12 max-w-[800px] mb-8">
     <h2 class="font-title font-extrabold text-3xl mt-12 mb-6">
      Common Questions
     </h2>
@@ -306,21 +359,29 @@
     >
      100% free, forever 🤑
     </div>
-    <div class="bg-black text-white w-11/12 text-left mx-auto rounded-t-lg p-6">
-     <h3 class="font-mulish_regular font-regular text-2xl mb-2">
-      Create Tutorials in 3 Clicks.
-     </h3>
-     <p class="font-slate-500 text-sm font-normal leading-6 opacity-60 mb-6">
-      With WizardShot, You Click Capture, And We’ll Capture What’s Happening on
-      Your Screen And Turn It Into A Tutorial.
-     </p>
-     <div class="shadow-container">
-      <div class="gradient-shadow"></div>
+    <div
+     class="flex flex-col md:flex-row bg-black text-white w-11/12 text-left mx-auto rounded-t-lg p-6"
+    >
+     <div class="md:w-[60%]">
+      <h3 class="font-mulish_regular font-regular text-2xl mb-2">
+       Create Tutorials in 3 Clicks.
+      </h3>
+      <p class="font-slate-500 text-sm font-normal leading-6 opacity-60 mb-6">
+       With WizardShot, You Click Capture, And We’ll Capture What’s Happening on
+       Your Screen And Turn It Into A Tutorial.
+      </p>
+     </div>
+     <div
+      class="shadow-container flex flex-col justify-center items-end ml-auto my-auto"
+     >
+      <div class="gradient-shadow max-h-[40px] left-0 top-0"></div>
       <div class="content">
        <a href="/"
-        ><p class="my-4 text-right text-xl underline underline-offset-4">
+        ><span
+         class="my-4 w-auto text-right md:text-left text-xl underline underline-offset-4"
+        >
          Try Wizardshot →
-        </p></a
+        </span></a
        >
       </div>
      </div>
@@ -328,7 +389,9 @@
    </div>
   </main>
 
-  <footer class="flex flex-col px-6 my-12 gap-y-12">
+  <footer
+   class="relative flex flex-col md:flex-row max-w-[1000px] mx-auto px-6 py-12 pb-28 gap-y-12 border-t-4 border-black"
+  >
    <div class="flex flex-col gap-y-6">
     <div>
      <img class="h-8 w-auto" src="./public/footer_logo.png" alt="Logo" />
@@ -374,26 +437,27 @@
    </div>
 
    <div class="learn-more-and-about flex gap-x-12">
+    <!-- FOOTER MENU -->
     <div>
      <h2 class="font-mulish_bold font-bold text-2xl mb-4">Learn More</h2>
-     <menu>
+     <menu class="md:w-[172px]">
       <a href="/"
-       ><li class="font-mulish_regular font-regular text-xl mb-4">
+       ><li class="font-mulish_regular font-regular text-xl md:text-l mb-2">
         Wizardshot
        </li></a
       >
       <a href="/"
-       ><li class="font-mulish_regular font-regular text-xl mb-4">
+       ><li class="font-mulish_regular font-regular text-xl md:text-l mb-2">
         Community Page
        </li></a
       >
       <a href="/"
-       ><li class="font-mulish_regular font-regular text-xl mb-4">
+       ><li class="font-mulish_regular font-regular text-xl md:text-l mb-2">
         Help Center
        </li></a
       >
       <a href="/"
-       ><li class="font-mulish_regular font-regular text-xl mb-4">
+       ><li class="font-mulish_regular font-regular text-xl md:text-l mb-2">
         Security Information
        </li></a
       >
@@ -401,7 +465,7 @@
     </div>
     <div>
      <h2 class="font-mulish_bold font-bold text-2xl mb-4">Company</h2>
-     <menu>
+     <menu class="md:w-[172px]">
       <a href="/"
        ><li class="font-mulish_regular font-regular text-xl mb-4">
         About Us
@@ -416,38 +480,48 @@
     </div>
    </div>
 
-   <div>
-    <div class="flex gap-x-4 mb-6">
-     <a href="/"><img src="./public/tiktok.png" alt="Link for Tiktok" /></a>
-     <a href="/"
-      ><img src="./public/instagram.png" alt="Link for Instagram"
-     /></a>
+   <div
+    class="flex flex-col md:flex-col-reverse md:justify-between md:text-right md:w-[250px] md:h-[180px]"
+   >
+    <div>
+     <!-- SOCIALS -->
+     <div class="flex gap-x-4 mb-6 md:justify-end">
+      <a href="/"><img src="./public/tiktok.png" alt="Link for Tiktok" /></a>
+      <a href="/"
+       ><img src="./public/instagram.png" alt="Link for Instagram"
+      /></a>
+     </div>
+
+     <!-- LOG IN / SIGN UP -->
+     <menu class="flex md:flex-row-reverse gap-x-4">
+      <a href="/"
+       ><p class="font-mulish_bold text-2xl font-semibold">Log In</p></a
+      >
+      <a href="/"
+       ><p class="font-mulish_bold text-2xl font-semibold">Sign Up</p></a
+      >
+     </menu>
     </div>
 
-    <menu class="flex gap-x-4">
-     <a href="/"
-      ><p class="font-mulish_bold text-2xl font-semibold">Log In</p></a
-     >
-     <a href="/"
-      ><p class="font-mulish_bold text-2xl font-semibold">Sign Up</p></a
-     >
-    </menu>
-   </div>
+    <hr class="my-6 md:hidden" />
 
-   <hr />
-
-   <div class="flex flex-col gap-y-4 items-center justify-center">
-    <div class="flex flex-col gap-y-2 items-center justify-center mb-4">
-     <h5 class="text-slate-900 font-mulish_regular text-sm">
-      📞 +1 (833) 387 3877
-     </h5>
-     <h5 class="text-slate-900 font-mulish_regular text-sm">
-      ✉️ success@wizardshot.com
-     </h5>
+    <!-- CONTACT INFO -->
+    <div class="flex flex-col gap-y-4 md:gap-x-2 items-center justify-end">
+     <div class="flex flex-col gap-y-2 items-center md:items-end mb-4">
+      <h5 class="text-slate-900 font-mulish_regular text-sm">
+       📞 +1 (833) 387 3877
+      </h5>
+      <h5 class="text-slate-900 font-mulish_regular text-sm">
+       ✉️ success@wizardshot.com
+      </h5>
+     </div>
     </div>
-
-    <h4 class="text-slate-300">© 2024 Wizardshot – All rights reserved.</h4>
    </div>
+   <h4
+    class="mx-auto md:absolute md:bottom-5 md:left-[calc(50%-142px)] text-slate-300 md:text-slate-500"
+   >
+    © 2024 Wizardshot – All rights reserved.
+   </h4>
   </footer>
  </body>
 </html>
